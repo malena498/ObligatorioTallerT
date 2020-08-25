@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+	<META CHARSET = "UTF-8">
+	<TITLE> Home </TITLE>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="STYLES.css">
+	<script src="SCRIPT.js"></script>
+
+
+</HEAD>
+<BODY>
+	<FORM ID= "login">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  			<a class="navbar-brand" href="#">@</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+			   <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			    	<li class="nav-item active">
+			       		<a class="nav-link" href="LOGIN.html">Inicio <span class="sr-only">(current)</span></a>
+			    	</li>
+			    </ul>
+			    <div class="form-inline my-2 my-lg-0">
+			    	<a class="nav-link" href="LOGIN.html">Iniciar sesión</a>
+			    	<a  class="nav-link" href="ABM.html">Registrarse</a>
+			    </div>
+			  </div>
+		</nav>
+		<div class="modal-content col-3">
+			<div class="modal-header">
+			   <h5 class="modal-title">Iniciar Sesión</h5>
+			</div>
+			<div name= "Login" class="modal-body">
+				<div class="modal-body" >
+					<LABEL FOR ="Usuario"  class= "label"> Usuario:</LABEL>
+					<br>
+					<INPUT TYPE= "text" id= "usu" NAME ="usuario" class="input" PLEACEHOLDER= "Usuario" REQUIRED>
+					<br>
+					<br>
+					<LABEL FOR ="pass"  class= "label"> Contraseña:</LABEL>
+					<br>
+					<INPUT TYPE= "password" id = "pas" NAME ="pass" class="input" PLEACEHOLDER= "Contraseña" REQUIRED>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button id= "btnIniciar" class="btn btn-dark" TYPE= "button" onclick="iniciarSesion()" > Iniciar </button>
+				 <button id= "btnReiniciar" type="button" class="btn btn-dark" onclick= "limpiarLogin()" >Borrar campos</button>
+			</div>
+		</div>
+		<a id= "lnkABM"  href="ABM.HTML"> Registrarse </a>
+		<button disabled= "true" id="api"  onclick="goPrincipal()"> APIS </button>
+		<p id= "lblMsj"> </p>
+	</from>
+</BODY>
